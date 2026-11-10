@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Gundam 3H Shop</title>
+    <link rel="stylesheet" href="asets/icon/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-pages.css">
+</head>
+<body class="body-page">
+    <div class="than">
+        <header class="head-web">
+            <a class="name-shop" href="index.html" aria-label="Gundam 3H Shop - trang chủ">
+                <span class="shop-mark" aria-hidden="true">3H</span>
+                <span class="shop-name">
+                    <strong>Gundam 3H Shop</strong>
+                    <small>Mô hình Gundam dành cho bạn</small>
+                </span>
+            </a>
+            <form class="search-bar" role="search" action="search.html" method="get" novalidate>
+                <input type="search" name="q" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm sản phẩm">
+                <button type="submit" aria-label="Tìm kiếm"><i class="bi bi-search" aria-hidden="true"></i></button>
+            </form>
+            <div class="header-actions">
+                <a class="header-action" href="cart.html" aria-label="Giỏ hàng" aria-current="page">
+                    <i class="bi bi-cart3" aria-hidden="true"></i>
+                    <span>Giỏ hàng</span>
+                </a>
+                <a class="header-action" href="account.html" aria-label="Tài khoản">
+                    <i class="bi bi-person-circle" aria-hidden="true"></i>
+                    <span>Tài khoản</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <nav class="breadcrumb" aria-label="Đường dẫn trang">
+                <a href="index.html">Trang chủ</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Giỏ hàng</span>
+            </nav>
+            <div class="page-heading">
+                <h1>Giỏ hàng của bạn</h1>
+                <p>1 sản phẩm trong giỏ hàng</p>
+            </div>
+
+            <div class="cart-layout">
+                <section class="page-panel cart-products" aria-labelledby="cart-products-title">
+                    <h2 id="cart-products-title">Sản phẩm đã chọn</h2>
+                    <!-- Sản phẩm, số lượng và tổng tiền là dữ liệu mẫu cố định. -->
+                    <div class="cart-table-scroll" role="region" aria-label="Danh sách sản phẩm trong giỏ hàng" tabindex="0">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sản phẩm</th>
+                                    <th scope="col">Đơn giá</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Thành tiền</th>
+                                    <th scope="col">Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="cart-product" href="product.html">
+                                            <img src="asets/strike freedom/strikefreedom.jpg" alt="Mô hình MG Strike Freedom Gundam" width="88" height="88">
+                                            <span>
+                                                <strong>MG STRIKE FREEDOM GUNDAM</strong>
+                                                <small>BANDAI · Tỷ lệ 1/100</small>
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td>1.110.000₫</td>
+                                    <td><input class="cart-quantity" type="number" value="1" aria-label="Số lượng MG Strike Freedom Gundam"></td>
+                                    <td class="cart-item-total">1.110.000₫</td>
+                                    <td><button class="cart-remove" type="button" aria-label="Xóa MG Strike Freedom Gundam"><i class="bi bi-trash3" aria-hidden="true"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a class="continue-shopping" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Tiếp tục mua sắm</a>
+                </section>
+
+                <aside class="page-panel cart-summary" aria-labelledby="cart-summary-title">
+                    <h2 id="cart-summary-title">Tóm tắt giỏ hàng</h2>
+                    <dl class="cart-totals">
+                        <dt>Tạm tính</dt><dd>1.110.000₫</dd>
+                        <dt>Phí vận chuyển</dt><dd>30.000₫</dd>
+                    </dl>
+                    <div class="cart-grand-total"><span>Tổng cộng</span><strong>1.140.000₫</strong></div>
+                    <a class="page-button" href="checkout.html">Tiến hành đặt hàng</a>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="under">© 2026 Gundam 3H Shop</footer>
+    </div>
+</body>
+</html>

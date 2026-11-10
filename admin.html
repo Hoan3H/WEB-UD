@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị - Gundam 3H Shop</title>
+    <link rel="stylesheet" href="asets/icon/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <a class="admin-brand" href="admin.html" aria-label="Trang quản trị Gundam 3H Shop">
+                <span class="shop-mark" aria-hidden="true">3H</span>
+                <span><strong>Gundam 3H Shop</strong><small>Quản trị cửa hàng</small></span>
+            </a>
+            <nav class="admin-nav" aria-label="Menu quản trị">
+                <a href="#overview"><i class="bi bi-speedometer2" aria-hidden="true"></i> Tổng quan</a>
+                <a href="#products"><i class="bi bi-box-seam" aria-hidden="true"></i> Quản lý sản phẩm</a>
+                <a href="#orders"><i class="bi bi-receipt" aria-hidden="true"></i> Quản lý đơn hàng</a>
+                <a href="#customers"><i class="bi bi-people" aria-hidden="true"></i> Quản lý khách hàng</a>
+                <a href="#reports"><i class="bi bi-bar-chart" aria-hidden="true"></i> Thống kê</a>
+                <a href="#categories"><i class="bi bi-grid" aria-hidden="true"></i> Quản lý danh mục</a>
+            </nav>
+            <a class="admin-back" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Về cửa hàng</a>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-topbar">
+                <div><p class="admin-eyebrow">GUNDAM 3H SHOP</p><h1>Trang quản trị</h1></div>
+                <a class="admin-user" href="account.html"><i class="bi bi-person-circle" aria-hidden="true"></i> Quản trị viên</a>
+            </header>
+
+            <!-- Các bảng, biểu đồ và tổng tiền dùng dữ liệu mẫu cố định. -->
+            <section class="admin-overview" id="overview" aria-labelledby="overview-title">
+                <h2 id="overview-title">Tổng quan cửa hàng</h2>
+                <div class="admin-stats">
+                    <article class="admin-stat"><i class="bi bi-box-seam" aria-hidden="true"></i><div><p>Sản phẩm</p><strong>8</strong><small>4 danh mục mô hình</small></div></article>
+                    <article class="admin-stat"><i class="bi bi-receipt" aria-hidden="true"></i><div><p>Đơn hàng</p><strong>1</strong><small>1 đơn chờ xác nhận</small></div></article>
+                    <article class="admin-stat"><i class="bi bi-people" aria-hidden="true"></i><div><p>Khách hàng</p><strong>3</strong><small>2 tài khoản hoạt động</small></div></article>
+                    <article class="admin-stat"><i class="bi bi-cash-stack" aria-hidden="true"></i><div><p>Doanh thu đã thu</p><strong>0₫</strong><small>Chưa có đơn hoàn thành</small></div></article>
+                </div>
+                <p class="admin-warning"><i class="bi bi-exclamation-triangle" aria-hidden="true"></i> Tồn kho: 2 sản phẩm sắp hết hàng và 1 sản phẩm đã hết hàng.</p>
+            </section>
+
+            <section class="admin-panel" id="products" aria-labelledby="products-title">
+                <div class="admin-section-heading">
+                    <div><h2 id="products-title">Quản lý sản phẩm</h2><p>Danh sách, giá bán và số lượng tồn kho</p></div>
+                    <a class="admin-button" href="#product-form"><i class="bi bi-plus-lg" aria-hidden="true"></i> Thêm sản phẩm</a>
+                </div>
+                <div class="admin-filters">
+                    <label for="product-search">Tìm sản phẩm<input id="product-search" type="search" placeholder="Tên hoặc mã sản phẩm"></label>
+                    <label for="product-category">Danh mục<select id="product-category"><option>Tất cả danh mục</option><option>Master Grade (MG)</option><option>High Grade (HG)</option><option>Real Grade (RG)</option><option>Perfect Grade (PG)</option></select></label>
+                    <label for="product-stock">Tồn kho<select id="product-stock"><option>Tất cả trạng thái</option><option>Còn hàng</option><option>Sắp hết hàng</option><option>Hết hàng</option></select></label>
+                    <button class="admin-button admin-button-light" type="button">Lọc sản phẩm</button>
+                </div>
+                <div class="admin-table-scroll" role="region" aria-label="Bảng sản phẩm" tabindex="0">
+                    <table class="admin-table">
+                        <thead><tr><th scope="col">Mã</th><th scope="col">Sản phẩm</th><th scope="col">Danh mục</th><th scope="col">Giá bán</th><th scope="col">Tồn kho</th><th scope="col">Trạng thái</th><th scope="col">Thao tác</th></tr></thead>
+                        <tbody>
+                            <tr><td>SP001</td><td><div class="admin-product"><img src="asets/bac-ba.jpg" alt="Mô hình Gundam Bác Ba" width="48" height="48"><strong>Gundam Bác Ba</strong></div></td><td>MG 1/100</td><td>1.250.000₫</td><td>9</td><td><span class="admin-badge badge-green">Còn hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam Bác Ba">Xóa</button></div></td></tr>
+                            <tr><td>SP002</td><td><div class="admin-product"><img src="asets/f90.jpg" alt="Mô hình Gundam F90" width="48" height="48"><strong>Gundam F90</strong></div></td><td>MG 1/100</td><td>950.000₫</td><td>6</td><td><span class="admin-badge badge-green">Còn hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam F90">Xóa</button></div></td></tr>
+                            <tr><td>SP003</td><td><div class="admin-product"><img src="asets/justice.webp" alt="Mô hình Gundam Justice" width="48" height="48"><strong>Gundam Justice</strong></div></td><td>MG 1/100</td><td>1.350.000₫</td><td>8</td><td><span class="admin-badge badge-green">Còn hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam Justice">Xóa</button></div></td></tr>
+                            <tr><td>SP004</td><td><div class="admin-product"><img src="asets/strike.jpg" alt="Mô hình Gundam Strike" width="48" height="48"><strong>Gundam Strike</strong></div></td><td>MG 1/100</td><td>850.000₫</td><td>7</td><td><span class="admin-badge badge-green">Còn hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam Strike">Xóa</button></div></td></tr>
+                            <tr><td>SP005</td><td><div class="admin-product"><img src="asets/uni-fake.jpg" alt="Mô hình Gundam Unicorn" width="48" height="48"><strong>Gundam Unicorn</strong></div></td><td>MG 1/100</td><td>1.200.000₫</td><td>0</td><td><span class="admin-badge badge-red">Hết hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam Unicorn">Xóa</button></div></td></tr>
+                            <tr><td>SP006</td><td><div class="admin-product"><img src="asets/MG-ECLIPSE-GUNDAM-AZG-6.jpg" alt="Mô hình Gundam Eclipse" width="48" height="48"><strong>Gundam Eclipse</strong></div></td><td>MG 1/100</td><td>1.300.000₫</td><td>6</td><td><span class="admin-badge badge-green">Còn hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam Eclipse">Xóa</button></div></td></tr>
+                            <tr><td>SP007</td><td><div class="admin-product"><img src="asets/strike freedom/strikefreedom.jpg" alt="Mô hình Gundam Strike Freedom" width="48" height="48"><strong>Gundam Strike Freedom</strong></div></td><td>MG 1/100</td><td>1.110.000₫</td><td>5</td><td><span class="admin-badge badge-gold">Sắp hết hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam Strike Freedom">Xóa</button></div></td></tr>
+                            <tr><td>SP008</td><td><div class="admin-product"><img src="asets/zeta.jpg" alt="Mô hình Gundam Zeta" width="48" height="48"><strong>Gundam Zeta</strong></div></td><td>MG 1/100</td><td>1.450.000₫</td><td>4</td><td><span class="admin-badge badge-gold">Sắp hết hàng</span></td><td><div class="admin-actions"><a href="#product-form">Sửa</a><button type="button" aria-label="Xóa Gundam Zeta">Xóa</button></div></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="admin-form-section" id="product-form">
+                    <h3>Thông tin thêm / sửa sản phẩm</h3>
+                    <div class="admin-form">
+                        <label for="product-code">Mã sản phẩm<input id="product-code" type="text" placeholder="VD: SP009"></label>
+                        <label for="product-name">Tên sản phẩm<input id="product-name" type="text" placeholder="Nhập tên mô hình"></label>
+                        <label for="product-group">Danh mục<select id="product-group"><option>Master Grade (MG)</option><option>High Grade (HG)</option><option>Real Grade (RG)</option><option>Perfect Grade (PG)</option></select></label>
+                        <label for="product-brand">Thương hiệu<input id="product-brand" type="text" placeholder="VD: BANDAI"></label>
+                        <label for="product-price">Giá bán (₫)<input id="product-price" type="text" placeholder="VD: 1110000"></label>
+                        <label for="product-quantity">Số lượng tồn kho<input id="product-quantity" type="number" placeholder="VD: 10"></label>
+                        <div class="admin-photo-field">
+                            <span>Ảnh sản phẩm</span>
+                            <button class="admin-button admin-button-light admin-photo-button" type="button">Chọn ảnh</button>
+                        </div>
+                        <label for="product-status">Trạng thái<select id="product-status"><option>Đang bán</option><option>Ngừng bán</option></select></label>
+                        <label class="admin-field-wide" for="product-description">Mô tả sản phẩm<textarea id="product-description" rows="4" placeholder="Nhập thông tin mô hình, tỷ lệ và xuất xứ"></textarea></label>
+                        <div class="admin-form-actions"><button class="admin-button" type="button">Lưu sản phẩm</button><button class="admin-button admin-button-light" type="button">Hủy</button></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="admin-panel" id="orders" aria-labelledby="orders-title">
+                <div class="admin-section-heading"><div><h2 id="orders-title">Quản lý đơn hàng</h2><p>Theo dõi đơn và trạng thái giao hàng</p></div></div>
+                <div class="admin-filters">
+                    <label for="order-search">Tìm đơn hàng<input id="order-search" type="search" placeholder="Mã đơn hoặc tên khách hàng"></label>
+                    <label for="order-filter">Trạng thái<select id="order-filter"><option>Tất cả trạng thái</option><option>Chờ xác nhận</option><option>Đã xác nhận</option><option>Đang giao</option><option>Hoàn thành</option><option>Đã hủy</option></select></label>
+                    <button class="admin-button admin-button-light" type="button">Lọc đơn hàng</button>
+                </div>
+                <div class="admin-table-scroll" role="region" aria-label="Bảng đơn hàng" tabindex="0">
+                    <table class="admin-table">
+                        <thead><tr><th scope="col">Mã đơn</th><th scope="col">Khách hàng</th><th scope="col">Ngày đặt</th><th scope="col">Tổng tiền</th><th scope="col">Thanh toán</th><th scope="col">Trạng thái</th><th scope="col">Thao tác</th></tr></thead>
+                        <tbody><tr><td><a href="order-detail.html">DH0001</a></td><td>Nguyễn Minh An</td><td>09/11/2026</td><td>1.140.000₫</td><td>COD · Chưa thu</td><td><span class="admin-badge badge-gold">Chờ xác nhận</span></td><td><a class="admin-text-link" href="order-detail.html">Xem chi tiết</a></td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="admin-panel" aria-labelledby="order-status-title">
+                <div class="admin-section-heading"><div><h2 id="order-status-title">Cập nhật đơn DH0001</h2></div></div>
+                <div class="admin-form">
+                    <label for="order-status">Trạng thái đơn hàng<select id="order-status"><option selected>Chờ xác nhận</option><option>Đã xác nhận</option><option>Đang giao</option><option>Hoàn thành</option><option>Đã hủy</option></select></label>
+                    <label for="payment-status">Trạng thái thanh toán<select id="payment-status"><option selected>Chưa thu tiền</option><option>Đã thanh toán</option><option>Đã hoàn tiền</option></select></label>
+                    <label class="admin-field-wide" for="order-note">Ghi chú quản trị<textarea id="order-note" rows="3" placeholder="Nhập ghi chú cho đơn hàng"></textarea></label>
+                    <div class="admin-form-actions"><button class="admin-button" type="button">Lưu trạng thái</button></div>
+                </div>
+            </section>
+
+            <section class="admin-panel" id="customers" aria-labelledby="customers-title">
+                <div class="admin-section-heading"><div><h2 id="customers-title">Quản lý khách hàng</h2><p>Thông tin liên hệ và trạng thái tài khoản</p></div></div>
+                <div class="admin-filters">
+                    <label for="customer-search">Tìm khách hàng<input id="customer-search" type="search" placeholder="Tên, email hoặc mã khách hàng"></label>
+                    <label for="customer-filter">Tài khoản<select id="customer-filter"><option>Tất cả trạng thái</option><option>Hoạt động</option><option>Tạm khóa</option></select></label>
+                    <button class="admin-button admin-button-light" type="button">Lọc khách hàng</button>
+                </div>
+                <div class="admin-table-scroll" role="region" aria-label="Bảng khách hàng" tabindex="0">
+                    <table class="admin-table">
+                        <thead><tr><th scope="col">Mã</th><th scope="col">Họ tên</th><th scope="col">Email</th><th scope="col">Số đơn</th><th scope="col">Trạng thái</th><th scope="col">Thao tác</th></tr></thead>
+                        <tbody>
+                            <tr><td>KH001</td><td>Nguyễn Minh An</td><td>kh01@example.com</td><td>1</td><td><span class="admin-badge badge-green">Hoạt động</span></td><td><button class="admin-small-button" type="button" aria-label="Khóa tài khoản Nguyễn Minh An">Khóa</button></td></tr>
+                            <tr><td>KH002</td><td>Trần Thanh Bình</td><td>kh02@example.com</td><td>0</td><td><span class="admin-badge badge-green">Hoạt động</span></td><td><button class="admin-small-button" type="button" aria-label="Khóa tài khoản Trần Thanh Bình">Khóa</button></td></tr>
+                            <tr><td>KH003</td><td>Lê Ngọc Chi</td><td>kh03@example.com</td><td>0</td><td><span class="admin-badge badge-red">Tạm khóa</span></td><td><button class="admin-small-button" type="button" aria-label="Mở khóa tài khoản Lê Ngọc Chi">Mở khóa</button></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="admin-panel" id="reports" aria-labelledby="reports-title">
+                <div class="admin-section-heading"><div><h2 id="reports-title">Thống kê</h2><p>Tình hình đơn hàng và giá trị sản phẩm được đặt</p></div></div>
+                <div class="admin-filters">
+                    <label for="report-month">Tháng<select id="report-month"><option selected>Tháng 11/2026</option><option>Tháng 10/2026</option><option>Tháng 9/2026</option></select></label>
+                    <button class="admin-button admin-button-light" type="button">Xem thống kê</button>
+                    <button class="admin-button admin-button-light" type="button">Xuất báo cáo</button>
+                </div>
+                <div class="admin-report-grid">
+                    <article class="admin-report-card">
+                        <h3>Trạng thái đơn hàng</h3>
+                        <div class="admin-report-row"><span>Chờ xác nhận</span><div class="admin-report-track"><div class="admin-report-fill"></div></div><strong>1</strong></div>
+                        <div class="admin-report-row"><span>Đã xác nhận</span><div class="admin-report-track"></div><strong>0</strong></div>
+                        <div class="admin-report-row"><span>Đang giao</span><div class="admin-report-track"></div><strong>0</strong></div>
+                        <div class="admin-report-row"><span>Hoàn thành</span><div class="admin-report-track"></div><strong>0</strong></div>
+                        <div class="admin-report-row"><span>Đã hủy</span><div class="admin-report-track"></div><strong>0</strong></div>
+                    </article>
+                    <article class="admin-report-card">
+                        <h3>Sản phẩm được đặt</h3>
+                        <p class="admin-report-product">MG Strike Freedom Gundam</p>
+                        <dl class="admin-details"><dt>Số lượng</dt><dd>1 sản phẩm</dd><dt>Giá trị hàng</dt><dd>1.110.000₫</dd><dt>Doanh thu đã thu</dt><dd>0₫</dd></dl>
+                        <p class="admin-muted">Đơn DH0001 đang chờ xác nhận, chưa thu tiền.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="admin-panel" id="categories" aria-labelledby="categories-title">
+                <div class="admin-section-heading"><div><h2 id="categories-title">Quản lý danh mục</h2><p>Phân loại mô hình theo dòng sản phẩm</p></div></div>
+                <div class="admin-table-scroll" role="region" aria-label="Bảng danh mục" tabindex="0">
+                    <table class="admin-table">
+                        <thead><tr><th scope="col">Mã</th><th scope="col">Tên danh mục</th><th scope="col">Tỷ lệ</th><th scope="col">Số sản phẩm</th><th scope="col">Thao tác</th></tr></thead>
+                        <tbody>
+                            <tr><td>MG</td><td>Master Grade</td><td>1/100</td><td>8</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục MG">Xóa</button></div></td></tr>
+                            <tr><td>HG</td><td>High Grade</td><td>1/144</td><td>0</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục HG">Xóa</button></div></td></tr>
+                            <tr><td>RG</td><td>Real Grade</td><td>1/144</td><td>0</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục RG">Xóa</button></div></td></tr>
+                            <tr><td>PG</td><td>Perfect Grade</td><td>1/60</td><td>0</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục PG">Xóa</button></div></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="admin-form-section" id="category-form">
+                    <h3>Thêm / sửa danh mục</h3>
+                    <div class="admin-form">
+                        <label for="category-code">Mã danh mục<input id="category-code" type="text" placeholder="VD: MG"></label>
+                        <label for="category-name">Tên danh mục<input id="category-name" type="text" placeholder="VD: Master Grade"></label>
+                        <div class="admin-form-actions"><button class="admin-button" type="button">Lưu danh mục</button><button class="admin-button admin-button-light" type="button">Hủy</button></div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="admin-footer">© 2026 Gundam 3H Shop · Khu vực quản trị</footer>
+        </main>
+    </div>
+</body>
+</html>

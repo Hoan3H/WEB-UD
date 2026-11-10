@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gundam 3H SHOP san pham</title>
+        <link rel="stylesheet" href="asets/icon/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/style-product.css">
+    </head>
+    <body class="body-product">
+        <header class="head-web">
+            <a class="name-shop" href="index.html" aria-label="Gundam 3H Shop - trang chủ">
+                <span class="shop-mark" aria-hidden="true">3H</span>
+                <span class="shop-name">
+                    <strong>Gundam 3H Shop</strong>
+                    <small>Mô hình Gundam dành cho bạn</small>
+                </span>
+            </a>
+            <form class="search-bar" role="search" action="search.html" method="get" novalidate>
+                <input type="search" name="q" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm sản phẩm">
+                <button type="submit" aria-label="Tìm kiếm">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <div class="header-actions">
+                <a class="header-action" href="cart.html" aria-label="Giỏ hàng">
+                    <i class="bi bi-cart3" aria-hidden="true"></i>
+                    <span>Giỏ hàng</span>
+                </a>
+                <a class="header-action" href="account.html" aria-label="Tài khoản">
+                    <i class="bi bi-person-circle" aria-hidden="true"></i>
+                    <span>Tài khoản</span>
+                </a>
+            </div>
+        </header>
+        
+        <div class="product">
+            <div class="product-img">
+                <!-- Mũi tên và ảnh nhỏ cùng chọn các radio này qua thuộc tính for. -->
+                <input class="image-choice" type="radio" name="product-image" id="image-1" aria-label="Ảnh Strike Freedom 1" checked>
+                <input class="image-choice" type="radio" name="product-image" id="image-2" aria-label="Ảnh Strike Freedom 2">
+                <input class="image-choice" type="radio" name="product-image" id="image-3" aria-label="Ảnh Strike Freedom 3">
+                <input class="image-choice" type="radio" name="product-image" id="image-4" aria-label="Ảnh Strike Freedom 4">
+
+                <!-- Khi thay ảnh, sửa src ở cả ảnh lớn và ảnh nhỏ tương ứng. -->
+                <div class="img-product">
+                    <div class="product-slide slide-1">
+                        <img src="asets/strike freedom/strikefreedom.jpg" alt="Mô hình Gundam Strike Freedom - ảnh 1">
+                        <label class="image-arrow prev-image" for="image-4" aria-label="Ảnh trước"><i class="bi bi-chevron-left" aria-hidden="true"></i></label>
+                        <label class="image-arrow next-image" for="image-2" aria-label="Ảnh tiếp theo"><i class="bi bi-chevron-right" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="product-slide slide-2">
+                        <img src="asets/strike freedom/z6968909458509-9d0c3a6c3e4737344a5fd58605b9c92c-1756788785993.webp" alt="Mô hình Gundam Strike Freedom - ảnh 2">
+                        <label class="image-arrow prev-image" for="image-1" aria-label="Ảnh trước"><i class="bi bi-chevron-left" aria-hidden="true"></i></label>
+                        <label class="image-arrow next-image" for="image-3" aria-label="Ảnh tiếp theo"><i class="bi bi-chevron-right" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="product-slide slide-3">
+                        <img src="asets/strike freedom/z6968909506518-581ff5a89dac5328caae19971fa6ce9c-1756788786368.webp" alt="Mô hình Gundam Strike Freedom - ảnh 3">
+                        <label class="image-arrow prev-image" for="image-2" aria-label="Ảnh trước"><i class="bi bi-chevron-left" aria-hidden="true"></i></label>
+                        <label class="image-arrow next-image" for="image-4" aria-label="Ảnh tiếp theo"><i class="bi bi-chevron-right" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="product-slide slide-4">
+                        <img src="asets/strike freedom/z6968909506583-b0f83028cd2e04c26804be1a74db5ad4-1756788786926.jpg" alt="Mô hình Gundam Strike Freedom - ảnh 4">
+                        <label class="image-arrow prev-image" for="image-3" aria-label="Ảnh trước"><i class="bi bi-chevron-left" aria-hidden="true"></i></label>
+                        <label class="image-arrow next-image" for="image-1" aria-label="Ảnh tiếp theo"><i class="bi bi-chevron-right" aria-hidden="true"></i></label>
+                    </div>
+                </div>
+
+                <div class="img-list" role="group" aria-label="Chọn ảnh sản phẩm">
+                    <label for="image-1">
+                        <img src="asets/strike freedom/strikefreedom.jpg" alt="Chọn ảnh Strike Freedom 1">
+                    </label>
+                    <label for="image-2">
+                        <img src="asets/strike freedom/z6968909458509-9d0c3a6c3e4737344a5fd58605b9c92c-1756788785993.webp" alt="Chọn ảnh Strike Freedom 2">
+                    </label>
+                    <label for="image-3">
+                        <img src="asets/strike freedom/z6968909506518-581ff5a89dac5328caae19971fa6ce9c-1756788786368.webp" alt="Chọn ảnh Strike Freedom 3">
+                    </label>
+                    <label for="image-4">
+                        <img src="asets/strike freedom/z6968909506583-b0f83028cd2e04c26804be1a74db5ad4-1756788786926.jpg" alt="Chọn ảnh Strike Freedom 4">
+                    </label>
+                </div>
+            </div>
+            <div class="info">
+                <h1 class="info-title">[HÀNG SẴN] BANDAI Mô hình lắp ráp MG STRIKE FREEDOM GUNDAM Bandai - Hàng chính hãng</h1>
+
+                <div class="info-stats">
+                    <p><i class="bi bi-tag-fill" aria-hidden="true"></i> Có <strong>255</strong> lượt mua sản phẩm</p>
+                    <p><i class="bi bi-eye-fill" aria-hidden="true"></i> Có <strong>7950</strong> lượt xem sản phẩm</p>
+                </div>
+
+                <div class="info-meta">
+                    <span>Thương hiệu: <strong>BANDAI</strong></span>
+                    <span>Mã sản phẩm: 4573102616067</span>
+                </div>
+
+                <p class="info-price">1.110.000₫</p>
+
+                <div class="info-order">
+                    <input class="info-quantity" type="number" name="quantity" min="1" step="1" value="1" aria-label="Số lượng sản phẩm">
+                    <span class="info-stock">Sắp hết hàng</span>
+                </div>
+
+                <div class="info-actions">
+                    <button class="info-add-cart" type="button">Thêm vào giỏ hàng</button>
+                    <button class="info-buy-now" type="button">MUA NGAY</button>
+                </div>
+
+                
+            </div>
+            <div class="scrip-product">
+                <h2>THÔNG TIN SẢN PHẨM</h2>
+                <h3>Mô hình lắp ráp MG STRIKE FREEDOM GUNDAM</h3>
+                <dl>
+                    <dt>Hãng sản xuất</dt>
+                    <dd>BANDAI</dd>
+                    <dt>Xuất xứ</dt>
+                    <dd>Nhật Bản</dd>
+                    <dt>Tỷ lệ</dt>
+                    <dd>MG 1/100</dd>
+                    <dt>Chiều cao</dt>
+                    <dd>Khoảng 20cm</dd>
+                </dl>
+            </div>
+        </div>
+        <footer class="under">© 2026 Gundam 3H Shop</footer>
+    </body>
+</html>
+    

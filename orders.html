@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử đơn hàng - Gundam 3H Shop</title>
+    <link rel="stylesheet" href="asets/icon/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-pages.css">
+</head>
+<body class="body-page">
+    <div class="than">
+        <header class="head-web">
+            <a class="name-shop" href="index.html" aria-label="Gundam 3H Shop - trang chủ">
+                <span class="shop-mark" aria-hidden="true">3H</span>
+                <span class="shop-name"><strong>Gundam 3H Shop</strong><small>Mô hình Gundam dành cho bạn</small></span>
+            </a>
+            <form class="search-bar" role="search" action="search.html" method="get" novalidate>
+                <input type="search" name="q" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm sản phẩm">
+                <button type="submit" aria-label="Tìm kiếm"><i class="bi bi-search" aria-hidden="true"></i></button>
+            </form>
+            <div class="header-actions">
+                <a class="header-action" href="cart.html" aria-label="Giỏ hàng"><i class="bi bi-cart3" aria-hidden="true"></i><span>Giỏ hàng</span></a>
+                <a class="header-action" href="account.html" aria-label="Tài khoản"><i class="bi bi-person-circle" aria-hidden="true"></i><span>Tài khoản</span></a>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <nav class="breadcrumb" aria-label="Đường dẫn trang">
+                <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span>
+                <a href="account.html">Tài khoản</a><span aria-hidden="true">/</span>
+                <span aria-current="page">Lịch sử đơn hàng</span>
+            </nav>
+            <div class="page-heading"><h1>Lịch sử đơn hàng</h1><p>3 đơn hàng</p></div>
+
+            <section class="page-panel" aria-labelledby="orders-title">
+                <h2 id="orders-title">Đơn hàng của bạn</h2>
+                <!-- Ba đơn minh họa cùng dẫn đến một trang chi tiết Strike Freedom. -->
+                <div class="cart-table-scroll" role="region" aria-label="Danh sách đơn hàng" tabindex="0">
+                    <table class="cart-table">
+                        <thead><tr><th scope="col">Mã đơn</th><th scope="col">Ngày đặt</th><th scope="col">Sản phẩm</th><th scope="col">Tổng tiền</th><th scope="col">Trạng thái</th><th scope="col">Chi tiết</th></tr></thead>
+                        <tbody>
+                            <tr><td>DH0001</td><td>09/11/2026</td><td>MG Strike Freedom Gundam</td><td>1.140.000₫</td><td><span class="order-status order-pending">Chờ xác nhận</span></td><td><a class="order-detail-link" href="order-detail.html" aria-label="Xem chi tiết đơn DH0001">Xem chi tiết</a></td></tr>
+                            <tr><td>DH0002</td><td>08/11/2026</td><td>MG Strike Freedom Gundam</td><td>1.140.000₫</td><td><span class="order-status order-shipping">Đang giao</span></td><td><a class="order-detail-link" href="order-detail.html" aria-label="Xem chi tiết đơn DH0002">Xem chi tiết</a></td></tr>
+                            <tr><td>DH0003</td><td>07/11/2026</td><td>MG Strike Freedom Gundam</td><td>1.140.000₫</td><td><span class="order-status order-complete">Hoàn thành</span></td><td><a class="order-detail-link" href="order-detail.html" aria-label="Xem chi tiết đơn DH0003">Xem chi tiết</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a class="continue-shopping" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Tiếp tục mua sắm</a>
+            </section>
+        </main>
+
+        <footer class="under">© 2026 Gundam 3H Shop</footer>
+    </div>
+</body>
+</html>

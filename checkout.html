@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng - Gundam 3H Shop</title>
+    <link rel="stylesheet" href="asets/icon/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-pages.css">
+</head>
+<body class="body-page">
+    <div class="than">
+        <header class="head-web">
+            <a class="name-shop" href="index.html" aria-label="Gundam 3H Shop - trang chủ">
+                <span class="shop-mark" aria-hidden="true">3H</span>
+                <span class="shop-name"><strong>Gundam 3H Shop</strong><small>Mô hình Gundam dành cho bạn</small></span>
+            </a>
+            <form class="search-bar" role="search" action="search.html" method="get" novalidate>
+                <input type="search" name="q" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm sản phẩm">
+                <button type="submit" aria-label="Tìm kiếm"><i class="bi bi-search" aria-hidden="true"></i></button>
+            </form>
+            <div class="header-actions">
+                <a class="header-action" href="cart.html" aria-label="Giỏ hàng"><i class="bi bi-cart3" aria-hidden="true"></i><span>Giỏ hàng</span></a>
+                <a class="header-action" href="account.html" aria-label="Tài khoản"><i class="bi bi-person-circle" aria-hidden="true"></i><span>Tài khoản</span></a>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <nav class="breadcrumb" aria-label="Đường dẫn trang">
+                <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span>
+                <a href="cart.html">Giỏ hàng</a><span aria-hidden="true">/</span>
+                <span aria-current="page">Đặt hàng</span>
+            </nav>
+            <div class="page-heading"><h1>Đặt hàng</h1><p>Thông tin nhận hàng và thanh toán</p></div>
+
+            <div class="checkout-layout">
+                <section class="page-panel" aria-labelledby="checkout-information-title">
+                    <h2 id="checkout-information-title">Thông tin người nhận</h2>
+                    <!-- Các ô chỉ để trình bày và nhập thử, không gửi hay lưu dữ liệu. -->
+                    <div class="checkout-form">
+                        <div class="form-field"><label for="checkout-name">Họ và tên</label><input id="checkout-name" type="text" placeholder="Nhập họ và tên"></div>
+                        <div class="form-field"><label for="checkout-phone">Số điện thoại</label><input id="checkout-phone" type="text" placeholder="Nhập số điện thoại"></div>
+                        <div class="form-field checkout-wide"><label for="checkout-email">Email</label><input id="checkout-email" type="text" placeholder="Nhập email"></div>
+                        <div class="form-field checkout-wide"><label for="checkout-address">Địa chỉ nhận hàng</label><input id="checkout-address" type="text" placeholder="Số nhà, tên đường, phường/xã, tỉnh/thành phố"></div>
+                        <div class="form-field checkout-wide"><label for="checkout-note">Ghi chú</label><textarea id="checkout-note" rows="3" placeholder="Ghi chú giao hàng"></textarea></div>
+                    </div>
+                    <fieldset class="checkout-payment">
+                        <legend>Phương thức thanh toán</legend>
+                        <label><input type="radio" name="payment" value="cod" checked> Thanh toán khi nhận hàng (COD)</label>
+                        <label><input type="radio" name="payment" value="bank"> Chuyển khoản ngân hàng</label>
+                    </fieldset>
+                    <a class="continue-shopping" href="cart.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Quay lại giỏ hàng</a>
+                </section>
+
+                <aside class="page-panel cart-summary" aria-labelledby="checkout-summary-title">
+                    <h2 id="checkout-summary-title">Đơn hàng của bạn</h2>
+                    <div class="checkout-product">
+                        <img src="asets/strike freedom/strikefreedom.jpg" alt="Mô hình MG Strike Freedom Gundam" width="64" height="80">
+                        <div><strong>MG Strike Freedom Gundam</strong><p>Số lượng: 1</p></div>
+                    </div>
+                    <dl class="cart-totals"><dt>Tạm tính</dt><dd>1.110.000₫</dd><dt>Phí vận chuyển</dt><dd>30.000₫</dd></dl>
+                    <div class="cart-grand-total"><span>Tổng cộng</span><strong>1.140.000₫</strong></div>
+                    <!-- Liên kết chỉ mở trang lịch sử mẫu, không thực hiện tạo đơn. -->
+                    <a class="page-button" href="orders.html">Đặt hàng</a>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="under">© 2026 Gundam 3H Shop</footer>
+    </div>
+</body>
+</html>
