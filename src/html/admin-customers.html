@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý khách hàng - Gundam 3H Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <a class="admin-brand" href="admin.html" aria-label="Trang quản trị Gundam 3H Shop">
+                <img class="shop-mark" src="../../asets/logo/logo.png" alt="Logo Gundam 3H Shop" aria-hidden="true">
+                <span><strong>Gundam 3H Shop</strong><small>Quản trị cửa hàng</small></span>
+            </a>
+            <nav class="admin-nav" aria-label="Menu quản trị">
+                <a href="admin.html"><i class="bi bi-speedometer2" aria-hidden="true"></i> Tổng quan</a>
+                <a href="admin-products.html"><i class="bi bi-box-seam" aria-hidden="true"></i> Quản lý sản phẩm</a>
+                <a href="admin-orders.html"><i class="bi bi-receipt" aria-hidden="true"></i> Quản lý đơn hàng</a>
+                <a href="admin-customers.html" aria-current="page"><i class="bi bi-people" aria-hidden="true"></i> Quản lý khách hàng</a>
+                <a href="admin-reports.html"><i class="bi bi-bar-chart" aria-hidden="true"></i> Thống kê</a>
+                <a href="admin-categories.html"><i class="bi bi-grid" aria-hidden="true"></i> Quản lý danh mục</a>
+            </nav>
+            <a class="admin-back" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Về cửa hàng</a>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-topbar">
+                <div><p class="admin-eyebrow">GUNDAM 3H SHOP</p><h1>Quản lý khách hàng</h1></div>
+                <a class="admin-user" href="account.html"><i class="bi bi-person-circle" aria-hidden="true"></i> Quản trị viên</a>
+            </header>
+
+            <section class="admin-panel" id="customers" aria-labelledby="customers-title">
+                <div class="admin-section-heading"><div><h2 id="customers-title">Quản lý khách hàng</h2><p>Thông tin liên hệ và trạng thái tài khoản</p></div></div>
+                <div class="admin-filters">
+                    <label for="customer-search">Tìm khách hàng<input id="customer-search" type="search" placeholder="Tên, email hoặc mã khách hàng"></label>
+                    <label for="customer-filter">Tài khoản<select id="customer-filter"><option>Tất cả trạng thái</option><option>Hoạt động</option><option>Tạm khóa</option></select></label>
+                    <button class="admin-button admin-button-light" type="button">Lọc khách hàng</button>
+                </div>
+                <div class="admin-table-scroll" role="region" aria-label="Bảng khách hàng" tabindex="0">
+                    <table class="admin-table">
+                        <thead><tr><th scope="col">Mã</th><th scope="col">Họ tên</th><th scope="col">Email</th><th scope="col">Số đơn</th><th scope="col">Trạng thái</th><th scope="col">Thao tác</th></tr></thead>
+                        <tbody>
+                            <tr><td>KH001</td><td>Nguyễn Minh An</td><td>kh01@example.com</td><td>1</td><td><span class="admin-badge badge-green">Hoạt động</span></td><td><button class="admin-small-button" type="button" aria-label="Khóa tài khoản Nguyễn Minh An">Khóa</button></td></tr>
+                            <tr><td>KH002</td><td>Trần Thanh Bình</td><td>kh02@example.com</td><td>0</td><td><span class="admin-badge badge-green">Hoạt động</span></td><td><button class="admin-small-button" type="button" aria-label="Khóa tài khoản Trần Thanh Bình">Khóa</button></td></tr>
+                            <tr><td>KH003</td><td>Lê Ngọc Chi</td><td>kh03@example.com</td><td>0</td><td><span class="admin-badge badge-red">Tạm khóa</span></td><td><button class="admin-small-button" type="button" aria-label="Mở khóa tài khoản Lê Ngọc Chi">Mở khóa</button></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý danh mục - Gundam 3H Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <a class="admin-brand" href="admin.html" aria-label="Trang quản trị Gundam 3H Shop">
+                <img class="shop-mark" src="../../asets/logo/logo.png" alt="Logo Gundam 3H Shop" aria-hidden="true">
+                <span><strong>Gundam 3H Shop</strong><small>Quản trị cửa hàng</small></span>
+            </a>
+            <nav class="admin-nav" aria-label="Menu quản trị">
+                <a href="admin.html"><i class="bi bi-speedometer2" aria-hidden="true"></i> Tổng quan</a>
+                <a href="admin-products.html"><i class="bi bi-box-seam" aria-hidden="true"></i> Quản lý sản phẩm</a>
+                <a href="admin-orders.html"><i class="bi bi-receipt" aria-hidden="true"></i> Quản lý đơn hàng</a>
+                <a href="admin-customers.html"><i class="bi bi-people" aria-hidden="true"></i> Quản lý khách hàng</a>
+                <a href="admin-reports.html"><i class="bi bi-bar-chart" aria-hidden="true"></i> Thống kê</a>
+                <a href="admin-categories.html" aria-current="page"><i class="bi bi-grid" aria-hidden="true"></i> Quản lý danh mục</a>
+            </nav>
+            <a class="admin-back" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Về cửa hàng</a>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-topbar">
+                <div><p class="admin-eyebrow">GUNDAM 3H SHOP</p><h1>Quản lý danh mục</h1></div>
+                <a class="admin-user" href="account.html"><i class="bi bi-person-circle" aria-hidden="true"></i> Quản trị viên</a>
+            </header>
+
+            <section class="admin-panel" id="categories" aria-labelledby="categories-title">
+                <div class="admin-section-heading"><div><h2 id="categories-title">Quản lý danh mục</h2><p>Phân loại mô hình theo dòng sản phẩm</p></div></div>
+                <div class="admin-table-scroll" role="region" aria-label="Bảng danh mục" tabindex="0">
+                    <table class="admin-table">
+                        <thead><tr><th scope="col">Mã</th><th scope="col">Tên danh mục</th><th scope="col">Tỷ lệ</th><th scope="col">Số sản phẩm</th><th scope="col">Thao tác</th></tr></thead>
+                        <tbody>
+                            <tr><td>MG</td><td>Master Grade</td><td>1/100</td><td>8</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục MG">Xóa</button></div></td></tr>
+                            <tr><td>HG</td><td>High Grade</td><td>1/144</td><td>0</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục HG">Xóa</button></div></td></tr>
+                            <tr><td>RG</td><td>Real Grade</td><td>1/144</td><td>0</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục RG">Xóa</button></div></td></tr>
+                            <tr><td>PG</td><td>Perfect Grade</td><td>1/60</td><td>0</td><td><div class="admin-actions"><a href="#category-form">Sửa</a><button type="button" aria-label="Xóa danh mục PG">Xóa</button></div></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="admin-form-section" id="category-form">
+                    <h3>Thêm / sửa danh mục</h3>
+                    <div class="admin-form">
+                        <label for="category-code">Mã danh mục<input id="category-code" type="text" placeholder="VD: MG"></label>
+                        <label for="category-name">Tên danh mục<input id="category-name" type="text" placeholder="VD: Master Grade"></label>
+                        <div class="admin-form-actions"><button class="admin-button" type="button">Lưu danh mục</button><button class="admin-button admin-button-light" type="button">Hủy</button></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+

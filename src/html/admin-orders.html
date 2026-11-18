@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đơn hàng - Gundam 3H Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <a class="admin-brand" href="admin.html" aria-label="Trang quản trị Gundam 3H Shop">
+                <img class="shop-mark" src="../../asets/logo/logo.png" alt="Logo Gundam 3H Shop" aria-hidden="true">
+                <span><strong>Gundam 3H Shop</strong><small>Quản trị cửa hàng</small></span>
+            </a>
+            <nav class="admin-nav" aria-label="Menu quản trị">
+                <a href="admin.html"><i class="bi bi-speedometer2" aria-hidden="true"></i> Tổng quan</a>
+                <a href="admin-products.html"><i class="bi bi-box-seam" aria-hidden="true"></i> Quản lý sản phẩm</a>
+                <a href="admin-orders.html" aria-current="page"><i class="bi bi-receipt" aria-hidden="true"></i> Quản lý đơn hàng</a>
+                <a href="admin-customers.html"><i class="bi bi-people" aria-hidden="true"></i> Quản lý khách hàng</a>
+                <a href="admin-reports.html"><i class="bi bi-bar-chart" aria-hidden="true"></i> Thống kê</a>
+                <a href="admin-categories.html"><i class="bi bi-grid" aria-hidden="true"></i> Quản lý danh mục</a>
+            </nav>
+            <a class="admin-back" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Về cửa hàng</a>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-topbar">
+                <div><p class="admin-eyebrow">GUNDAM 3H SHOP</p><h1>Quản lý đơn hàng</h1></div>
+                <a class="admin-user" href="account.html"><i class="bi bi-person-circle" aria-hidden="true"></i> Quản trị viên</a>
+            </header>
+
+            <section class="admin-panel" id="orders" aria-labelledby="orders-title">
+                <div class="admin-section-heading"><div><h2 id="orders-title">Quản lý đơn hàng</h2><p>Theo dõi đơn và trạng thái giao hàng</p></div></div>
+                <div class="admin-filters">
+                    <label for="order-search">Tìm đơn hàng<input id="order-search" type="search" placeholder="Mã đơn hoặc tên khách hàng"></label>
+                    <label for="order-filter">Trạng thái<select id="order-filter"><option>Tất cả trạng thái</option><option>Chờ xác nhận</option><option>Đã xác nhận</option><option>Đang giao</option><option>Hoàn thành</option><option>Đã hủy</option></select></label>
+                    <button class="admin-button admin-button-light" type="button">Lọc đơn hàng</button>
+                </div>
+                <div class="admin-table-scroll" role="region" aria-label="Bảng đơn hàng" tabindex="0">
+                    <table class="admin-table">
+                        <thead><tr><th scope="col">Mã đơn</th><th scope="col">Khách hàng</th><th scope="col">Ngày đặt</th><th scope="col">Tổng tiền</th><th scope="col">Thanh toán</th><th scope="col">Trạng thái</th><th scope="col">Thao tác</th></tr></thead>
+                        <tbody><tr><td><a href="order-detail.html">DH0001</a></td><td>Nguyễn Minh An</td><td>09/11/2026</td><td>1.140.000₫</td><td>COD · Chưa thu</td><td><span class="admin-badge badge-gold">Chờ xác nhận</span></td><td><a class="admin-text-link" href="order-detail.html">Xem chi tiết</a></td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="admin-panel" aria-labelledby="order-status-title">
+                <div class="admin-section-heading"><div><h2 id="order-status-title">Cập nhật đơn DH0001</h2></div></div>
+                <div class="admin-form">
+                    <label for="order-status">Trạng thái đơn hàng<select id="order-status"><option selected>Chờ xác nhận</option><option>Đã xác nhận</option><option>Đang giao</option><option>Hoàn thành</option><option>Đã hủy</option></select></label>
+                    <label for="payment-status">Trạng thái thanh toán<select id="payment-status"><option selected>Chưa thu tiền</option><option>Đã thanh toán</option><option>Đã hoàn tiền</option></select></label>
+                    <label class="admin-field-wide" for="order-note">Ghi chú quản trị<textarea id="order-note" rows="3" placeholder="Nhập ghi chú cho đơn hàng"></textarea></label>
+                    <div class="admin-form-actions"><button class="admin-button" type="button">Lưu trạng thái</button></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+
