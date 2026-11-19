@@ -130,6 +130,18 @@ body { margin: 0; min-width: 320px; }
     line-height: 1;
 }
 
+.account-menu { position: relative; color: #fff; }
+.account-menu summary { display: flex; flex-direction: column; align-items: center; gap: 4px; max-width: 120px; font-size: 13px; font-weight: 700; text-align: center; cursor: pointer; list-style: none; }
+.account-menu summary::-webkit-details-marker { display: none; }
+.account-menu summary .bi { font-size: 38px; line-height: 1; }
+.account-menu nav { position: absolute; z-index: 20; top: calc(100% + 12px); right: 0; width: 250px; display: grid; gap: 4px; padding: 14px; border: 1px solid #eadada; border-radius: 12px; background: #fff; box-shadow: 0 14px 35px rgb(36 24 24 / 18%); color: #3E2723; }
+.account-menu nav::before { content: ""; position: absolute; top: -7px; right: 24px; width: 12px; height: 12px; transform: rotate(45deg); border-left: 1px solid #eadada; border-top: 1px solid #eadada; background: #fff; }
+.account-menu nav strong { color: #9B2226; }
+.account-menu nav small { margin-bottom: 8px; color: #7F5253; }
+.account-menu nav a { display: flex; align-items: center; gap: 9px; padding: 10px; border-radius: 7px; color: #3E2723; text-decoration: none; }
+.account-menu nav a:hover { background: #FAF3F3; }
+.account-menu nav .menu-logout { border-top: 1px solid #eadada; border-radius: 0 0 7px 7px; color: #B42318; font-weight: 700; }
+
 .under {
     padding: 18px;
     border: 1px solid #9B2226;

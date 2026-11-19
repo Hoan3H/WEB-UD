@@ -288,6 +288,13 @@
     margin-top: 0;
 }
 
+.logout-link { color: #b42318; font-weight: 700; }
+.account-summary { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 16px; margin: 0 0 24px; line-height: 1.6; }
+.account-summary dt { color: #7F5253; }
+.account-summary dd { margin: 0; }
+.secondary-button { border-color: #9B2226; background: #fff; color: #9B2226; }
+.secondary-button:hover { background: #FAF3F3; }
+
 .checkout-form {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

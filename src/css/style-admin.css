@@ -631,3 +631,18 @@
     }
 }
 
+.admin-logout {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: 12px;
+    padding: 8px 12px;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    color: #b42318;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.admin-logout:hover { background: #fff1f2; }

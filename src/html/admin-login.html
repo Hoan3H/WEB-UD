@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập quản trị – Gundam 3H Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-client.css">
+</head>
+<body>
+    <!--#include virtual="header.html" -->
+    <main class="container" style="max-width:400px;margin:2rem auto;">
+        <h1 style="text-align:center;margin-bottom:1rem;">Quản trị – Đăng nhập</h1>
+        <form action="admin.html" method="get" class="login-form">
+            <div style="margin-bottom:1rem;">
+                <label for="admin-email" style="display:block;margin-bottom:0.3rem;">Email</label>
+                <input type="email" id="admin-email" name="email" required style="width:100%;padding:0.5rem;border:1px solid #ccc;border-radius:4px;">
+            </div>
+            <div style="margin-bottom:1rem;">
+                <label for="admin-pwd" style="display:block;margin-bottom:0.3rem;">Mật khẩu</label>
+                <input type="password" id="admin-pwd" name="pwd" required style="width:100%;padding:0.5rem;border:1px solid #ccc;border-radius:4px;">
+            </div>
+            <button type="submit" class="add-to-cart" style="width:100%;font-size:1rem;">Đăng nhập</button>
+        </form>
+        <p style="text-align:center;margin-top:1rem;"><a href="index.html">← Về cửa hàng</a></p>
+    </main>
+    <!--#include virtual="footer.html" -->
+</body>
+</html>

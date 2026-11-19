@@ -30,10 +30,7 @@
                     <i class="bi bi-cart3" aria-hidden="true"></i>
                     <span>Giỏ hàng</span>
                 </a>
-                <a class="header-action" href="account.html" aria-label="Tài khoản">
-                    <i class="bi bi-person-circle" aria-hidden="true"></i>
-                    <span>Tài khoản</span>
-                </a>
+                <details class="account-menu"><summary><i class="bi bi-person-circle"></i><span>Nguyễn Minh An</span></summary><nav><strong>Nguyễn Minh An</strong><small>minhan@example.com</small><a href="account.html">Thông tin tài khoản</a><a href="orders.html">Đơn hàng của tôi</a><a class="menu-logout" href="index.html">Đăng xuất</a></nav></details>
             </div>
         </header>
 
@@ -41,7 +38,7 @@
             <aside class="aside" aria-label="Danh mục sản phẩm">
                 <h2>Danh mục</h2>
                 <ul>
-                    <li><a class="category-current" href="category.html">Tất cả sản phẩm</a></li>
+                    <li><a class="category-current" href="index.html">Tất cả sản phẩm</a></li>
                     <li><a href="category.html">High Grade (HG)</a></li>
                     <li><a href="category.html">Real Grade (RG)</a></li>
                     <li><a href="category.html">Master Grade (MG)</a></li>
@@ -51,6 +48,13 @@
             </aside>
 
             <main class="main" id="products">
+                <form class="advanced-search" action="search.html" method="get" aria-label="Tìm kiếm nâng cao">
+                    <label>Tên sản phẩm<input type="search" name="q" value="Strike" placeholder="Nhập tên gần đúng"></label>
+                    <label>Phân loại<select name="category"><option value="">Tất cả sản phẩm</option><option selected>High Grade (HG)</option><option>Real Grade (RG)</option><option>Master Grade (MG)</option><option>Perfect Grade (PG)</option><option>Phụ kiện mô hình</option></select></label>
+                    <label>Giá từ<input type="number" name="min-price" min="0" step="50000" placeholder="0"></label>
+                    <label>Đến<input type="number" name="max-price" min="0" step="50000" placeholder="2.000.000"></label>
+                    <button type="submit">Lọc sản phẩm</button>
+                </form>
                 <div class="section-heading">
                     <div>
                         <p class="eyebrow">TÌM KIẾM SẢN PHẨM</p>
@@ -65,22 +69,28 @@
                         <div class="anh-sp"><img src="../../asets/strike.jpg" alt="Mô hình Gundam Strike" loading="lazy"></div>
                         <div class="cript-sp"><h2>Gundam Strike</h2><p>Mô hình Gundam</p></div>
                     </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
+                    <a class="add-to-cart" href="cart.html">Thêm vào giỏ hàng</a>
                 </article>
                 <article class="sanpham">
                     <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam Strike Freedom">
                         <div class="anh-sp"><img src="../../asets/strike freedom/strikefreedom.jpg" alt="Mô hình Gundam Strike Freedom" loading="lazy"></div>
                         <div class="cript-sp"><h2>Gundam Strike Freedom</h2><p>Mô hình Gundam</p></div>
                     </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
+                    <a class="add-to-cart" href="cart.html">Thêm vào giỏ hàng</a>
                 </article>
                 <article class="sanpham">
                     <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình HG Mighty Strike Freedom Gundam">
                         <div class="anh-sp"><img src="../../asets/hg/MIGHTY STRIKE FREEDOM GUNDAM.webp" alt="Mô hình HG Mighty Strike Freedom Gundam" loading="lazy"></div>
                         <div class="cript-sp"><h2>HG Mighty Strike Freedom Gundam</h2><p>Mô hình lắp ráp High Grade</p></div>
                     </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
+                    <a class="add-to-cart" href="cart.html">Thêm vào giỏ hàng</a>
                 </article>
+                <nav class="pagination" aria-label="Phân trang kết quả tìm kiếm">
+                    <span class="page-disabled" aria-disabled="true">‹ Trước</span>
+                    <a class="page-current" href="search.html" aria-current="page">1</a>
+                    <a href="search-page-2.html">2</a>
+                    <a href="search-page-2.html">Sau ›</a>
+                </nav>
             </main>
         </div>
 

@@ -21,7 +21,7 @@
             </form>
             <div class="header-actions">
                 <a class="header-action" href="cart.html" aria-label="Giỏ hàng"><i class="bi bi-cart3" aria-hidden="true"></i><span>Giỏ hàng</span></a>
-                <a class="header-action" href="account.html" aria-label="Tài khoản"><i class="bi bi-person-circle" aria-hidden="true"></i><span>Tài khoản</span></a>
+                <details class="account-menu"><summary><i class="bi bi-person-circle"></i><span>Nguyễn Minh An</span></summary><nav><strong>Nguyễn Minh An</strong><small>minhan@example.com</small><a href="account.html">Thông tin tài khoản</a><a href="orders.html">Đơn hàng của tôi</a><a class="menu-logout" href="index.html">Đăng xuất</a></nav></details>
             </div>
         </header>
 
@@ -38,11 +38,11 @@
                     <h2 id="checkout-information-title">Thông tin người nhận</h2>
                     <!-- Các ô chỉ để trình bày và nhập thử, không gửi hay lưu dữ liệu. -->
                     <div class="checkout-form">
-                        <div class="form-field"><label for="checkout-name">Họ và tên</label><input id="checkout-name" type="text" placeholder="Nhập họ và tên"></div>
-                        <div class="form-field"><label for="checkout-phone">Số điện thoại</label><input id="checkout-phone" type="text" placeholder="Nhập số điện thoại"></div>
-                        <div class="form-field checkout-wide"><label for="checkout-email">Email</label><input id="checkout-email" type="text" placeholder="Nhập email"></div>
-                        <div class="form-field checkout-wide"><label for="checkout-address">Địa chỉ nhận hàng</label><input id="checkout-address" type="text" placeholder="Số nhà, tên đường, phường/xã, tỉnh/thành phố"></div>
-                        <div class="form-field checkout-wide"><label for="checkout-note">Ghi chú</label><textarea id="checkout-note" rows="3" placeholder="Ghi chú giao hàng"></textarea></div>
+                        <div class="form-field"><label for="checkout-name">Họ và tên</label><input id="checkout-name" type="text" value="Nguyễn Minh An"></div>
+                        <div class="form-field"><label for="checkout-phone">Số điện thoại</label><input id="checkout-phone" type="text" value="0901 234 567"></div>
+                        <div class="form-field checkout-wide"><label for="checkout-email">Email</label><input id="checkout-email" type="text" value="minhan@example.com"></div>
+                        <div class="form-field checkout-wide"><label for="checkout-address">Địa chỉ nhận hàng</label><input id="checkout-address" type="text" value="273 An Dương Vương, Phường Chợ Quán, TP. Hồ Chí Minh"></div>
+                        <div class="form-field checkout-wide"><label for="checkout-note">Ghi chú</label><textarea id="checkout-note" rows="3">Giao hàng trong giờ hành chính, vui lòng gọi trước khi giao.</textarea></div>
                     </div>
                     <fieldset class="checkout-payment">
                         <legend>Phương thức thanh toán</legend>

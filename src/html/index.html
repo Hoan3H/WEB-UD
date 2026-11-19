@@ -30,10 +30,14 @@
                     <i class="bi bi-cart3" aria-hidden="true"></i>
                     <span>Giỏ hàng</span>
                 </a>
-                <a class="header-action" href="account.html" aria-label="Tài khoản">
-                    <i class="bi bi-person-circle" aria-hidden="true"></i>
-                    <span>Tài khoản</span>
-                </a>
+                <details class="account-menu">
+                    <summary aria-label="Mở menu tài khoản"><i class="bi bi-person-circle" aria-hidden="true"></i><span>Tài khoản</span></summary>
+                    <nav aria-label="Menu tài khoản">
+                        <strong>Khách hàng</strong><small>Bạn chưa đăng nhập</small>
+                        <a href="login.html"><i class="bi bi-box-arrow-in-right" aria-hidden="true"></i> Đăng nhập</a>
+                        <a href="register.html"><i class="bi bi-person-plus" aria-hidden="true"></i> Đăng ký tài khoản</a>
+                    </nav>
+                </details>
             </div>
         </header>
 
@@ -41,7 +45,7 @@
             <aside class="aside" aria-label="Danh mục sản phẩm">
                 <h2>Danh mục</h2>
                 <ul>
-                    <li><a class="category-current" href="category.html">Tất cả sản phẩm</a></li>
+                    <li><a class="category-current" href="index.html">Tất cả sản phẩm</a></li>
                     <li><a href="category.html">High Grade (HG)</a></li>
                     <li><a href="category.html">Real Grade (RG)</a></li>
                     <li><a href="category.html">Master Grade (MG)</a></li>
@@ -56,7 +60,7 @@
                         <p class="eyebrow">BỘ SƯU TẬP</p>
                         <h1>Sản phẩm nổi bật</h1>
                     </div>
-                    <span class="product-count">8 sản phẩm</span>
+                    <span class="product-count">8 sản phẩm · trang 1/2</span>
                 </div>
 
                 <article class="sanpham">
@@ -64,57 +68,35 @@
                     <div class="anh-sp"><img src="../../asets/bac-ba.jpg" alt="Mô hình Gundam Bác Ba" loading="lazy"></div>
                         <div class="cript-sp"><h2>Bác Ba</h2><p>Mô hình Gundam</p></div>
                     </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
+                    <a class="add-to-cart" href="cart.html">Thêm vào giỏ hàng</a>
                 </article>
                 <article class="sanpham">
                     <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam F90">
                     <div class="anh-sp"><img src="../../asets/f90.jpg" alt="Mô hình Gundam F90" loading="lazy"></div>
                         <div class="cript-sp"><h2>Gundam F90</h2><p>Mô hình Gundam</p></div>
                     </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
+                    <a class="add-to-cart" href="cart.html">Thêm vào giỏ hàng</a>
                 </article>
                 <article class="sanpham">
                     <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam Justice">
                     <div class="anh-sp"><img src="../../asets/justice.webp" alt="Mô hình Gundam Justice" loading="lazy"></div>
                         <div class="cript-sp"><h2>Gundam Justice</h2><p>Mô hình Gundam</p></div>
                     </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
+                    <a class="add-to-cart" href="cart.html">Thêm vào giỏ hàng</a>
                 </article>
                 <article class="sanpham">
                     <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam Strike">
                     <div class="anh-sp"><img src="../../asets/strike.jpg" alt="Mô hình Gundam Strike" loading="lazy"></div>
                         <div class="cript-sp"><h2>Gundam Strike</h2><p>Mô hình Gundam</p></div>
                     </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
+                    <a class="add-to-cart" href="cart.html">Thêm vào giỏ hàng</a>
                 </article>
-                <article class="sanpham">
-                    <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam Unicorn">
-                    <div class="anh-sp"><img src="../../asets/uni-fake.jpg" alt="Mô hình Gundam Unicorn" loading="lazy"></div>
-                        <div class="cript-sp"><h2>Gundam Unicorn</h2><p>Mô hình Gundam</p></div>
-                    </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
-                </article>
-                <article class="sanpham">
-                    <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam Eclipse">
-                    <div class="anh-sp"><img src="../../asets/MG-ECLIPSE-GUNDAM-AZG-6.jpg" alt="Mô hình Gundam Eclipse" loading="lazy"></div>
-                        <div class="cript-sp"><h2>Gundam Eclipse</h2><p>Mô hình Gundam</p></div>
-                    </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
-                </article>
-                <article class="sanpham">
-                    <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam Strike Freedom">
-                    <div class="anh-sp"><img src="../../asets/strikefreedom.jpg" alt="Mô hình Gundam Strike Freedom" loading="lazy"></div>
-                        <div class="cript-sp"><h2>Gundam Strike Freedom</h2><p>Mô hình Gundam</p></div>
-                    </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
-                </article>
-                <article class="sanpham">
-                    <a class="product-link" href="product.html" aria-label="Xem chi tiết mô hình Gundam Zeta">
-                    <div class="anh-sp"><img src="../../asets/zeta.jpg" alt="Mô hình Gundam Zeta" loading="lazy"></div>
-                        <div class="cript-sp"><h2>Gundam Zeta</h2><p>Mô hình Gundam</p></div>
-                    </a>
-                    <button class="add-to-cart" type="button">Thêm vào giỏ hàng</button>
-                </article>
+                <nav class="pagination" aria-label="Phân trang sản phẩm">
+                    <span class="page-disabled" aria-disabled="true">‹ Trước</span>
+                    <a class="page-current" href="index.html" aria-current="page">1</a>
+                    <a href="index-page-2.html">2</a>
+                    <a href="index-page-2.html">Sau ›</a>
+                </nav>
             </main>
         </div>
 

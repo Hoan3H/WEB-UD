@@ -27,10 +27,7 @@
                     <i class="bi bi-cart3" aria-hidden="true"></i>
                     <span>Giỏ hàng</span>
                 </a>
-                <a class="header-action" href="account.html" aria-label="Tài khoản" aria-current="page">
-                    <i class="bi bi-person-circle" aria-hidden="true"></i>
-                    <span>Tài khoản</span>
-                </a>
+                <details class="account-menu"><summary><i class="bi bi-person-circle"></i><span>Nguyễn Minh An</span></summary><nav><strong>Nguyễn Minh An</strong><small>minhan@example.com</small><a href="account.html">Thông tin tài khoản</a><a href="orders.html">Đơn hàng của tôi</a><a class="menu-logout" href="index.html">Đăng xuất</a></nav></details>
             </div>
         </header>
 
@@ -42,54 +39,41 @@
             </nav>
             <div class="page-heading">
                 <h1>Tài khoản của bạn</h1>
-                <p>Chào mừng bạn đến với Gundam 3H Shop</p>
+                <p>Xin chào, <strong>Nguyễn Minh An</strong>. Bạn đang đăng nhập bằng tài khoản người mua.</p>
                 <div class="account-links">
                     <a class="continue-shopping" href="orders.html"><i class="bi bi-receipt" aria-hidden="true"></i> Lịch sử đơn hàng</a>
-                    <a class="continue-shopping" href="admin.html"><i class="bi bi-speedometer2" aria-hidden="true"></i> Trang quản trị</a>
+                    <a class="continue-shopping logout-link" href="index.html"><i class="bi bi-box-arrow-right" aria-hidden="true"></i> Đăng xuất</a>
                 </div>
             </div>
 
             <div class="account-layout">
-                <section class="page-panel account-panel" aria-labelledby="login-title">
-                    <h2 id="login-title">Đăng nhập</h2>
-                    <p class="account-intro">Bạn đã có tài khoản? Đăng nhập tại đây.</p>
-                    <!-- Form giao diện tĩnh; không kiểm tra hay gửi dữ liệu. -->
-                    <form class="account-form" novalidate>
+                <section class="page-panel account-panel" aria-labelledby="profile-title">
+                    <h2 id="profile-title">Thông tin người mua</h2>
+                    <form class="account-form" action="account.html" method="get">
                         <div class="form-field">
-                            <label for="login-email">Email</label>
-                            <input id="login-email" type="text" name="email" placeholder="Nhập email của bạn" autocomplete="email">
+                            <label for="profile-name">Họ và tên</label>
+                            <input id="profile-name" type="text" name="name" value="Nguyễn Minh An">
                         </div>
                         <div class="form-field">
-                            <label for="login-password">Mật khẩu</label>
-                            <input id="login-password" type="password" name="password" placeholder="Nhập mật khẩu" autocomplete="current-password">
+                            <label for="profile-email">Email</label>
+                            <input id="profile-email" type="email" name="email" value="minhan@example.com">
                         </div>
-                        <label class="remember-login"><input type="checkbox" name="remember"> Ghi nhớ đăng nhập</label>
-                        <button class="page-button" type="button">Đăng nhập</button>
+                        <div class="form-field">
+                            <label for="profile-phone">Số điện thoại</label>
+                            <input id="profile-phone" type="tel" name="phone" value="0901 234 567">
+                        </div>
+                        <button class="page-button" type="submit">Cập nhật thông tin</button>
                     </form>
                 </section>
 
-                <section class="page-panel account-panel" aria-labelledby="register-title">
-                    <h2 id="register-title">Đăng ký tài khoản</h2>
-                    <p class="account-intro">Tạo tài khoản mới để đồng hành cùng 3H Shop.</p>
-                    <form class="account-form" novalidate>
-                        <div class="form-field">
-                            <label for="register-name">Họ và tên</label>
-                            <input id="register-name" type="text" name="name" placeholder="Nhập họ và tên" autocomplete="name">
-                        </div>
-                        <div class="form-field">
-                            <label for="register-email">Email</label>
-                            <input id="register-email" type="text" name="email" placeholder="Nhập email của bạn" autocomplete="email">
-                        </div>
-                        <div class="form-field">
-                            <label for="register-password">Mật khẩu</label>
-                            <input id="register-password" type="password" name="password" placeholder="Nhập mật khẩu" autocomplete="new-password">
-                        </div>
-                        <div class="form-field">
-                            <label for="register-confirm">Nhập lại mật khẩu</label>
-                            <input id="register-confirm" type="password" name="confirm-password" placeholder="Nhập lại mật khẩu" autocomplete="new-password">
-                        </div>
-                        <button class="page-button" type="button">Đăng ký</button>
-                    </form>
+                <section class="page-panel account-panel" aria-labelledby="address-title">
+                    <h2 id="address-title">Địa chỉ mặc định</h2>
+                    <dl class="account-summary">
+                        <dt>Người nhận</dt><dd>Nguyễn Minh An</dd>
+                        <dt>Điện thoại</dt><dd>0901 234 567</dd>
+                        <dt>Địa chỉ</dt><dd>273 An Dương Vương, Phường Chợ Quán, TP. Hồ Chí Minh</dd>
+                    </dl>
+                    <a class="page-button secondary-button" href="checkout.html">Dùng địa chỉ này để đặt hàng</a>
                 </section>
             </div>
         </main>
